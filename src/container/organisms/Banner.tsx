@@ -6,7 +6,6 @@ const Banner: React.FC = () => {
   return (
 		<div id="banner">
 			<div className="container">
-
 				<section>
 					<Spring config={{tension:500,friction:100, delay:500}}
 						from={{color:"transparent",opacity:0}}

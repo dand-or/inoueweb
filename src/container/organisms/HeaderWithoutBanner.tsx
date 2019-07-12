@@ -6,7 +6,6 @@ const HeaderWithoutBanner: React.FC = () => {
   return (
     <header id="header-wrapper">
 			<Header/>
-			<Banner/>
 	  </header>
   );
 }
