@@ -11,10 +11,6 @@ select {
   letter-spacing: 0;
 }
 
-body {
-  padding-top: 44px;
-}
-
 h2,
 h3,
 h4,
@@ -164,8 +160,8 @@ header .byline {
 /* Header                                                                        */
 /*********************************************************************************/
 
-#heder {
-  display: none;
+#header {
+  height: 60px;
 }
 
 #header .container {
@@ -173,11 +169,25 @@ header .byline {
 }
 
 #logo {
+  position: absolute;
+  top:0;
+  left: 10px;
+  z-index: 100;
+}
+#logo a img {
+  height: 70px;
+}
+#nav {
   display: none;
 }
 
-#nav {
-  display: none;
+#header .hamburger{
+  position: absolute;
+  top : 15px;
+  right: 15px;
+  width: 32px;
+  padding: 8px;
+  z-index: 100;
 }
 
 /*********************************************************************************/
@@ -253,7 +263,7 @@ header .byline {
 }
 
 /*********************************************************************************/
-/* about                                                                          */
+/* about                                                                         */
 /*********************************************************************************/
 
 #about {
@@ -266,4 +276,33 @@ header .byline {
 
 #about .right {
   text-align: center;
+}
+
+/*********************************************************************************/
+/* mobile-menu                                                                   */
+/*********************************************************************************/
+
+#mobile-menu{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom right, #333 0%, #444 100%); 
+  z-index: 1000;
+  animation: fadeIn 0.3s ease 0s 1 normal;
+}
+@keyframes fadeIn {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
+#mobile-menu ul{
+  margin-top: 6em;
+  text-align: center;
+}
+#mobile-menu ul li{
+  padding: 10px 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+#mobile-menu ul li a {
+  color: #f2f2f2;
 }
