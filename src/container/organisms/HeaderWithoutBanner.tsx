@@ -4,8 +4,8 @@ import Banner from './Banner';
 
 const HeaderWithoutBanner: React.FC = () => {
   return (
-    <header id="header-wrapper">
-			<Header/>
+    <header id="header-wrapper" className="no-image">
+			<Header isTop={false}/>
 	  </header>
   );
 }

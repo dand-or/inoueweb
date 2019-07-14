@@ -11,7 +11,7 @@ const HeaderWithBanner: React.FC = () => {
 						to={{opacity:1}}>
         {props => 
         <div style={props}>
-          <Header/>
+          <Header isTop={true} />
         </div>}
       </Spring>
       <Spring config={{tension:500,friction:100, delay:300}}
