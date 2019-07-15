@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {HashLink as Link} from 'react-router-hash-link';
 
 const TopNews : React.FC = () => {
   return (
@@ -15,7 +15,7 @@ const TopNews : React.FC = () => {
 					<span>News</span>
 				</header>
 			</section>
-			<TopNewsLine linkType={2} date="2019/07/15" summary="C96で頒布する絵本のタイトルが『ザクとないしょ』に決定！詳細を待て！" href="/products"/>
+			<TopNewsLine linkType={2} date="2019/07/15" summary="C96で頒布する絵本のタイトルが『ザクとないしょ』に決定！詳細を待て！" href="/products#root"/>
 			<TopNewsLine linkType={0} date="2019/06/17" summary="2019年8月10日(土) コミックマーケット96にサークル参加します。西ぬ02aにて「ガンダムの絵本(タイトル未定)」を頒布！" />
 		</div>
 	</div>
@@ -41,7 +41,7 @@ const TopNewsLine = (props:ITopNewsLine) => {
 			case 2:
 				let to = typeof(props.href) == 'undefined' ? '' : props.href;
 				return(
-				<Link to={to}>
+				<Link smooth to={to}>
 					<p>{props.summary}</p>
 				</Link>
 				)

@@ -1,7 +1,8 @@
 import React,{useState} from 'react';
 import MobileMenu from '../pages/MobileMenu';
 import AnchorLink from '../../presentational/atoms/AnchorLink';
-import {Link} from 'react-router-dom';
+//import {Link} from 'react-router-dom';
+import {HashLink as Link} from 'react-router-hash-link';
 import MediaQuery from 'react-responsive'
 import {Transition} from 'react-spring/renderprops'
 
@@ -21,8 +22,8 @@ const Header = (props:IHeaderProps) => {
 							<nav id="nav">
 								<ul>
 									<li><Link to="/">Top</Link></li>
-									<li>{props.isTop ? <AnchorLink href="#main">News</AnchorLink> : <a href="/#main">News</a>}</li>
-									<li>{props.isTop ? <AnchorLink href="#about">About</AnchorLink> : <a href="/#about">About</a>}</li>
+									<li>{props.isTop ? <AnchorLink href="#main">News</AnchorLink> : <Link to="/#main">News</Link>}</li>
+									<li>{props.isTop ? <AnchorLink href="#about">About</AnchorLink> : <Link to="/#about">About</Link>}</li>
 									<li><Link to="/products">Products</Link></li>
 								</ul>
 							</nav>
