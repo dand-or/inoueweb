@@ -2,6 +2,7 @@
 
 import React from 'react';
 import {useSpring, animated} from 'react-spring';
+import {HashLink as Link} from 'react-router-hash-link';
 
 interface IProductsItemProps{
     href: string,
@@ -17,7 +18,7 @@ const ProductsItem = (p:IProductsItemProps) => {
   return (
     <animated.div style={fadeIn}>
         <div className="products-item">
-            <a href={p.href}>
+            <Link to={p.href}>
             <span className="products-item-thumb">
                 <img className={p.isCommingSoon ? "grayfileter" : ""} src={p.thumb} />
                 {p.isCommingSoon ? <span className="products-commingsoon">Comming soon</span> : null}
@@ -27,7 +28,7 @@ const ProductsItem = (p:IProductsItemProps) => {
                 <span className="products-genre">{p.genre}</span>
                 <span className="products-item-title">{p.title}</span>
             </div>
-            </a>
+            </Link>
         </div>
     </animated.div>  
   );

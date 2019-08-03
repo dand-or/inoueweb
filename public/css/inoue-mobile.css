@@ -238,6 +238,7 @@ header .byline {
   text-align: center;
 }
 
+
 /*********************************************************************************/
 /* Extra                                                                         */
 /*********************************************************************************/
@@ -305,4 +306,27 @@ header .byline {
 }
 #mobile-menu ul li a {
   color: #f2f2f2;
+}
+
+/*********************************************************************************/
+/* products                                                                      */
+/*********************************************************************************/
+
+#products-main .product-img{
+  width: 100%;
+  height: auto;
+  min-height: auto;
+  margin: 0 auto 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#products-main .product-txt-container{
+  width: 100%;
+  padding: 4%;
+  box-shadow: none;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to right bottom, #1abc9c 0%,#16a085 50%,#27ae60 100%);
 }

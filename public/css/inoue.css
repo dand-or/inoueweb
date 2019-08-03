@@ -904,10 +904,10 @@ icomoon
 }
 #products-main .products-item-thumb{
 	width: 100%;
-    display: block;
-    background: #fff;
-    position: relative;
-    overflow: hidden;
+  display: block;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
 }
 #products-main .products-item-thumb img{
 	width: 100%;
@@ -959,4 +959,82 @@ icomoon
 	border: 1px solid #f2f2f2;
 	color: #f2f2f2;
 	padding: 3px;
+}
+#products-main .product-img{
+  width: 400px;
+  min-height: 400px;
+  align-items: center;
+  margin: 0 40px 0 20px;
+}
+
+#products-main .product-img img{
+  width: 100%;
+}
+
+#products-main .product-txt-container{
+  width: 680px;
+  margin: 0 auto;
+  box-shadow: none;
+  overflow: hidden;
+  background: linear-gradient(to right bottom, #1abc9c 0%,#16a085 50%,#27ae60 100%);
+  padding: 22px 25px;
+}
+
+#products-main .product-txt-container .product-txt-container-header{
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding : 10px;
+}
+
+
+#products-main .product-txt-container .product-txt-container-header .products-tag{
+  margin: 0;
+}
+
+#products-main .content{
+  color: grey;
+  margin: 20px 0 0;
+  padding: 30px 0 0;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+#products-main .content p{
+  margin-bottom: 15px;
+  color: #333;
+  line-height: 1.6;
+  font-size: 14px;
+  position: relative;
+}
+
+#products-main .content .catchcopy{
+  font-size: 24px;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  margin: 0 0 30px;
+}
+
+#products-main .content .summary{
+  font-size: 14px;
+  margin: 0 0 30px;
+  padding: 0 5px;
+}
+
+#products-main .content .price{
+  font-size: 16px;
+  margin: 0 0 5px;
+}
+
+#products-main .content .up-date{
+  font-size: 16px;
+  margin: 0 0 30px;
+}
+
+#products-main .content .share{
+  display: flex;
+  justify-content: center;
+  padding :0 0 20px;
+}
+
+#products-main .content .share div[role="button"]{
+  cursor: pointer;
+  margin: 0 0.5rem;
 }

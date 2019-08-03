@@ -21,7 +21,7 @@ const Products: React.FC = () => {
           </section>
 
           <div id="products-main" className="flex flex-wrap">
-            <ProductsItem  href="#" thumb="/img/products/zakutonaisho-thumb.jpg" isCommingSoon={true} tag="C96" genre="絵本" title="ザクとないしょ"/>
+            <ProductsItem  href="/products/zakutonaisho" thumb="/img/products/zakutonaisho-thumb.jpg" isCommingSoon={false} tag="C96" genre="絵本" title="ザクとないしょ"/>
           </div>
         </div>
       </div>

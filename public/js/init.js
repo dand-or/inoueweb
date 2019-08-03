@@ -1,5 +1,5 @@
 skel.init({
-	prefix: 'css/inoue',
+	prefix: '/css/inoue',
 	resetCSS: true,
 	boxModel: 'border',
 	grid: {
