@@ -8,13 +8,13 @@ import { TwitterShareButton,TwitterIcon,FacebookShareButton,FacebookIcon} from '
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
 
-const ZakuToNaisho: React.FC = () => {
-  const articleUrl = "https://inoue-mokei.com/products/zakutonaisho";
+const WorldMobileSuitMuseum: React.FC = () => {
+  const articleUrl = "https://inoue-mokei.com/products/worldmobilesuitmuseum";
   const productImage = () => {
     return (
       <div className="product-img">
         <p>
-          <img src="/img/products/zakutonaisho_001.png" alt="ザクとないしょ表紙" />
+          <img src="/img/products/c97/hyousi-top.jpg" alt="ワールドモビルスーツミュージアム表紙" />
         </p>
       </div>
     )};
@@ -23,25 +23,26 @@ const ZakuToNaisho: React.FC = () => {
     return(
       <div className="product-txt-container">
         <div className="product-txt-container-header">
-          <span className="products-tag">C96@土曜 西 ぬ02-a</span>
-          <span className="products-genre">絵本</span>
-          <span className="products-item-title">ザクとないしょ</span>
+          <span className="products-tag">C97@土曜 西 や16-b</span>
+          <span className="products-genre">図鑑</span>
+          <span className="products-item-title">WORLD MOBILE SUIT MUSEUM</span>
         </div>
         <div className="content">
           <MediaQuery minDeviceWidth={481}>
-            <p className="catchcopy">ジオンの おとこは くちが かたいぜ！</p>
+            <p className="catchcopy">こんなのゴッグなんかじゃあありませんよ！</p>
           </MediaQuery>
           <MediaQuery maxDeviceWidth={480}>
-            <p className="catchcopy">ジオンの おとこは<br/>くちが かたいぜ！</p>
+            <p className="catchcopy">こんなのゴッグなんかじゃあ<br/>ありませんよ！</p>
           </MediaQuery>
-          <p className="summary">イノウエ模型が贈る記念すべき最初の作品は大人と子どもが一緒に楽しめるガンダム絵本！<br />
-            合計20頁に渡る、ちょっとヘンテコで心温まる物語で親子の絆を深めませんか？
+          <p className="summary">イノウエ模型が綴るモビルスーツと兵士たちの妄想ルポ図鑑が誕生！<br />
+            作家のモリナガ・ヨウさんのWORLD TANK MUSEUMをリスペクトした構成で愛すべきモビルスーツたちを図鑑にしました。
           </p>
-          <p>A5フルカラー20頁</p>
+          <p>収録: MS-07B GOUF / MS-09 DOM / MS-14A GELGOOG / MSM-04 ACGUY / MSM-10 ZOCK / MSM-03 GOGG / MSM-03C HY-GOGG / DFA-03 DOPP</p>
+          <p>B5フルカラー16頁</p>
           <p className="price">頒布価格: ¥500- </p>
-          <p className="up-date">発行日: 2019.08.10 </p>
+          <p className="up-date">発行日: 2019.12.28 </p>
           <div className="share">
-            <TwitterShareButton title="ザクとないしょ | イノウエ模型" via="inoue_mokei" url={articleUrl}>
+            <TwitterShareButton title="WORLD MOBILE SUIT MUSEUM | イノウエ模型" via="inoue_mokei" url={articleUrl}>
               <TwitterIcon size={32} round/>
             </TwitterShareButton>
             <FacebookShareButton url={articleUrl}>
@@ -55,23 +56,28 @@ const ZakuToNaisho: React.FC = () => {
 
   const images = [
     {
-      original: "/img/products/zakutonaisho_001.png",
-      thumbnail: '/img/products/zakutonaisho_001_220.png',
+      original: "/img/products/c97/hyousi_500.jpg",
+      thumbnail: '/img/products/c97/hyousi_150.jpg',
       description: "sample", 
     },
     {
-      original: "/img/products/zakutonaisho_004.png",
-      thumbnail: '/img/products/zakutonaisho_004_220.png',
+      original: "/img/products/c97/tobira_500.jpg",
+      thumbnail: '/img/products/c97/tobira_150.jpg',
       description: "sample",
     },
     {
-      original: "/img/products/zakutonaisho_006.png",
-      thumbnail: '/img/products/zakutonaisho_006_220.png',
+      original: "/img/products/c97/gouf_500.jpg",
+      thumbnail: '/img/products/c97/gouf_150.jpg',
       description: "sample",
     },
     {
-      original: "/img/products/zakutonaisho_013.png",
-      thumbnail: '/img/products/zakutonaisho_013_220.png',
+      original: "/img/products/c97/zock_500.jpg",
+      thumbnail: '/img/products/c97/zock_150.jpg',
+      description: "sample",
+    },
+    {
+      original: "/img/products/c97/hygogg_500.jpg",
+      thumbnail: '/img/products/c97/hygogg_150.jpg',
       description: "sample",
     }
   ]
@@ -108,4 +114,4 @@ const ZakuToNaisho: React.FC = () => {
   );
 };
 
-export default ZakuToNaisho;
+export default WorldMobileSuitMuseum;
